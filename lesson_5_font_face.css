@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css?family=KoHo');
+
+
+section {
+    font-family: "Koho", sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+
+}
+
+
+@font-face {
+  font-family: test-font;
+    src: url("font.woff2") format("woff2");
+}
+
+.custom-font {
+    font-family: test-font, serif;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    }
+
+main {
+    text-align: left;
+    line-height: 30px;
+}
+
+h1 {
+    line-height: 40px;
+    text-align: center;
+}
+
+.yes {
+    line-height: 14px;
+    font-family: Arial, serif;
+    font-size: 12px;
+}
+
+
