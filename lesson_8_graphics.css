@@ -1,0 +1,70 @@
+
+.block {
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 5px 5px 4px grey;
+    border: 2px solid blue;
+    padding: 20px;
+    width: 700px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 50px 30px;
+    background: linear-gradient(to top, white, blueviolet);
+
+}
+
+.email2 {
+    box-shadow: 10px 8px 10px 10px yellow;
+}
+
+input:focus {
+    border: 3px solid orangered;
+}
+
+
+
+.hover p {
+    background: skyblue;
+    position: relative;
+}
+
+.hover p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: grey;
+    background: linear-gradient(to left, transparent, white);
+    opacity: 0.5;
+}
+
+.hover p:nth-child(odd):hover::before{
+    left: 50%
+
+}
+
+.hover p:nth-child(even):hover::before {
+    right: 50%;
+}
+
+
+
+.cat{
+    display: inline-block;
+    background: url('cat.jpg');
+    background-position: center;
+    background-size: 46%;
+    opacity: 0.5;
+  }
+
+
+
+
+
+
+
+
+
