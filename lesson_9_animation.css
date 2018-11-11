@@ -1,0 +1,143 @@
+
+
+.box_animate{
+
+    border: 1px solid black;
+    height: 769px;
+    background: bisque;
+
+}
+
+.rotate{
+    height: 200px;
+    width: 200px;
+    background: rgba(1 1 1 1);
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    /*left: 40%;*/
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-style: preserve-3d;
+
+}
+
+/*.animate{*/
+    /*animation-duration: 20s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-iteration-count: infinite;*/
+
+/*}*/
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg) ;
+    }
+
+    to {
+        transform: rotateY(360deg) ;
+       }
+}
+
+
+.moveBack {
+    height: 200px;
+    width: 200px;
+    background: blue;
+    position: absolute;
+    animation-name: back;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translateZ(-50px);
+    transform-style: preserve-3d;
+
+
+}
+
+.moveBack::before{
+    content: 'Back';
+    text-align: center;
+    color: white;
+    width: max-content;
+    height: max-content;
+    background: blue;
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    transform: translateZ(+1px);
+    transform-style: preserve-3d;
+
+}
+
+
+.moveFront {
+    height: 200px;
+    width: 200px;
+    background: red;
+    position: absolute;
+    animation-name: front;
+    animation-duration: 22s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translateZ(-50px);
+    transform-style: preserve-3d;
+
+
+
+}
+
+.moveFront::before {
+    content:'Front' ;
+    text-align: center;
+    color: white;
+    width: max-content;
+    height: max-content;
+    background: red;
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    /*transform: translateZ(-1px);*/
+    transform-style: preserve-3d;
+    transform: scale(-1,1);
+
+}
+
+
+
+@keyframes back {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+@keyframes front {
+    from {
+        transform: rotateZ(360deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
